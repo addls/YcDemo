@@ -31,7 +31,7 @@
                                                     message:@"您点击了动态按钮！"   
                                                    delegate:self   
                                           cancelButtonTitle:@"确定"  
-                                          otherButtonTitles:nil];  
+                                          otherButtonTitles:@"取消",@"第三项",nil];  
     [alert show];
 }
 
@@ -49,6 +49,10 @@
     someAddButton.frame = frame;
     [someAddButton addTarget:self action:@selector(someButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:someAddButton];
+}
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"buttonIndex:%d", buttonIndex);
 }
 
 
