@@ -17,6 +17,7 @@
 		444C0190157DD9A70094C3A1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444C018E157DD9A70094C3A1 /* ViewController.xib */; };
 		444C019D157DFE8E0094C3A1 /* plistdemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 444C019C157DFE8E0094C3A1 /* plistdemo.plist */; };
 		444C019F157E07480094C3A1 /* plistdemo1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 444C019E157E07480094C3A1 /* plistdemo1.plist */; };
+		447247C3158CE940000E67E9 /* QQ20120616-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 447247C2158CE940000E67E9 /* QQ20120616-1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		444C018F157DD9A70094C3A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		444C019C157DFE8E0094C3A1 /* plistdemo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = plistdemo.plist; path = ../plistdemo.plist; sourceTree = "<group>"; };
 		444C019E157E07480094C3A1 /* plistdemo1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = plistdemo1.plist; sourceTree = "<group>"; };
+		447247C2158CE940000E67E9 /* QQ20120616-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QQ20120616-1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				444C0181157DD9A70094C3A1 /* PlistDemo-Info.plist */,
+				447247C2158CE940000E67E9 /* QQ20120616-1.png */,
 				444C019C157DFE8E0094C3A1 /* plistdemo.plist */,
 				444C019E157E07480094C3A1 /* plistdemo1.plist */,
 				444C0182157DD9A70094C3A1 /* InfoPlist.strings */,
@@ -158,6 +161,7 @@
 				444C0190157DD9A70094C3A1 /* ViewController.xib in Resources */,
 				444C019D157DFE8E0094C3A1 /* plistdemo.plist in Resources */,
 				444C019F157E07480094C3A1 /* plistdemo1.plist in Resources */,
+				447247C3158CE940000E67E9 /* QQ20120616-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +286,7 @@
 				444C0195157DD9A70094C3A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
