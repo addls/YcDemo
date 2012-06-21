@@ -1,0 +1,273 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44E9C42E158EB1D400D975DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E9C42D158EB1D400D975DC /* UIKit.framework */; };
+		44E9C430158EB1D400D975DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E9C42F158EB1D400D975DC /* Foundation.framework */; };
+		44E9C432158EB1D400D975DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E9C431158EB1D400D975DC /* CoreGraphics.framework */; };
+		44E9C438158EB1D400D975DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44E9C436158EB1D400D975DC /* InfoPlist.strings */; };
+		44E9C43A158EB1D400D975DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E9C439158EB1D400D975DC /* main.m */; };
+		44E9C43E158EB1D400D975DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E9C43D158EB1D400D975DC /* AppDelegate.m */; };
+		44E9C447158EBC4500D975DC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E9C445158EBC4500D975DC /* RootViewController.m */; };
+		44E9C448158EBC4500D975DC /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E9C446158EBC4500D975DC /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44E9C429158EB1D400D975DC /* SwitchView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitchView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44E9C42D158EB1D400D975DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		44E9C42F158EB1D400D975DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44E9C431158EB1D400D975DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		44E9C435158EB1D400D975DC /* SwitchView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwitchView-Info.plist"; sourceTree = "<group>"; };
+		44E9C437158EB1D400D975DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		44E9C439158EB1D400D975DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44E9C43B158EB1D400D975DC /* SwitchView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwitchView-Prefix.pch"; sourceTree = "<group>"; };
+		44E9C43C158EB1D400D975DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		44E9C43D158EB1D400D975DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		44E9C444158EBC4500D975DC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ../RootViewController.h; sourceTree = "<group>"; };
+		44E9C445158EBC4500D975DC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = ../RootViewController.m; sourceTree = "<group>"; };
+		44E9C446158EBC4500D975DC /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = ../RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44E9C426158EB1D400D975DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E9C42E158EB1D400D975DC /* UIKit.framework in Frameworks */,
+				44E9C430158EB1D400D975DC /* Foundation.framework in Frameworks */,
+				44E9C432158EB1D400D975DC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44E9C41E158EB1D400D975DC = {
+			isa = PBXGroup;
+			children = (
+				44E9C433158EB1D400D975DC /* SwitchView */,
+				44E9C42C158EB1D400D975DC /* Frameworks */,
+				44E9C42A158EB1D400D975DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44E9C42A158EB1D400D975DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44E9C429158EB1D400D975DC /* SwitchView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44E9C42C158EB1D400D975DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44E9C42D158EB1D400D975DC /* UIKit.framework */,
+				44E9C42F158EB1D400D975DC /* Foundation.framework */,
+				44E9C431158EB1D400D975DC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44E9C433158EB1D400D975DC /* SwitchView */ = {
+			isa = PBXGroup;
+			children = (
+				44E9C43C158EB1D400D975DC /* AppDelegate.h */,
+				44E9C43D158EB1D400D975DC /* AppDelegate.m */,
+				44E9C444158EBC4500D975DC /* RootViewController.h */,
+				44E9C445158EBC4500D975DC /* RootViewController.m */,
+				44E9C446158EBC4500D975DC /* RootViewController.xib */,
+				44E9C434158EB1D400D975DC /* Supporting Files */,
+			);
+			path = SwitchView;
+			sourceTree = "<group>";
+		};
+		44E9C434158EB1D400D975DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44E9C435158EB1D400D975DC /* SwitchView-Info.plist */,
+				44E9C436158EB1D400D975DC /* InfoPlist.strings */,
+				44E9C439158EB1D400D975DC /* main.m */,
+				44E9C43B158EB1D400D975DC /* SwitchView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44E9C428158EB1D400D975DC /* SwitchView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44E9C441158EB1D400D975DC /* Build configuration list for PBXNativeTarget "SwitchView" */;
+			buildPhases = (
+				44E9C425158EB1D400D975DC /* Sources */,
+				44E9C426158EB1D400D975DC /* Frameworks */,
+				44E9C427158EB1D400D975DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwitchView;
+			productName = SwitchView;
+			productReference = 44E9C429158EB1D400D975DC /* SwitchView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44E9C420158EB1D400D975DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 44E9C423158EB1D400D975DC /* Build configuration list for PBXProject "SwitchView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 44E9C41E158EB1D400D975DC;
+			productRefGroup = 44E9C42A158EB1D400D975DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44E9C428158EB1D400D975DC /* SwitchView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44E9C427158EB1D400D975DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E9C438158EB1D400D975DC /* InfoPlist.strings in Resources */,
+				44E9C448158EBC4500D975DC /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44E9C425158EB1D400D975DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E9C43A158EB1D400D975DC /* main.m in Sources */,
+				44E9C43E158EB1D400D975DC /* AppDelegate.m in Sources */,
+				44E9C447158EBC4500D975DC /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44E9C436158EB1D400D975DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44E9C437158EB1D400D975DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44E9C43F158EB1D400D975DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		44E9C440158EB1D400D975DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44E9C442158EB1D400D975DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchView/SwitchView-Prefix.pch";
+				INFOPLIST_FILE = "SwitchView/SwitchView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		44E9C443158EB1D400D975DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchView/SwitchView-Prefix.pch";
+				INFOPLIST_FILE = "SwitchView/SwitchView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44E9C423158EB1D400D975DC /* Build configuration list for PBXProject "SwitchView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44E9C43F158EB1D400D975DC /* Debug */,
+				44E9C440158EB1D400D975DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44E9C441158EB1D400D975DC /* Build configuration list for PBXNativeTarget "SwitchView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44E9C442158EB1D400D975DC /* Debug */,
+				44E9C443158EB1D400D975DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44E9C420158EB1D400D975DC /* Project object */;
+}

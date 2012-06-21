@@ -39,15 +39,7 @@
     NSString *tmpDir = NSTemporaryDirectory();
     NSLog(@"%@", tmpDir);
 
-
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"QQ20120616-1" ofType:@"png"];
-    NSLog(@"%@", imagePath);
-    UIImage *image = [[UIImage alloc]initWithContentsOfFile:imagePath];
-    UIImageView  *imageView = [[UIImageView alloc] initWithImage:image]; 
-    UIImageView *iag = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 100, 30)];
-    [iag setImage:image];
-    [self.view addSubview:imageView];
-    
+        
     
     //写入文件testFile.txt
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -114,6 +106,7 @@
 //    [fileManager removeItemAtPath:fileName error:nil];
         **/
     
+    /**
     NSString * fileName = @"testFileNSFileManager.txt";
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
@@ -143,6 +136,18 @@
     [reader getBytes:&intData range:NSMakeRange([temp length], sizeof(intData))];
     [reader getBytes:&floatData range:NSMakeRange([temp length] + sizeof(intData), sizeof(floatData))];
     NSLog(@"stringData:%@ intData:%d floatData:%f", stringData, intData, floatData);
+    **/
+    
+//    通过使用下面的方法得到程序的main bundle
+    NSBundle *mainBundle = [NSBundle mainBundle];
+    
+    NSString *imagePath = [mainBundle pathForResource:@"QQ20120616-1" ofType:@"png"];
+    NSLog(@"%@", imagePath);
+    UIImage *image = [[UIImage alloc]initWithContentsOfFile:imagePath];
+    UIImageView  *imageView = [[UIImageView alloc] initWithImage:image]; 
+    [self.view addSubview:imageView];
+    
+
 }
 
 - (void)viewDidUnload
