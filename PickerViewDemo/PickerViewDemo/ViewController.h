@@ -11,6 +11,9 @@
 @interface ViewController : UIViewController<UIPickerViewDelegate, UITextFieldDelegate,UIPickerViewDataSource>
 {
     NSArray *pickerArray;
+    NSArray *subPickerArray;
+    NSDictionary *dicPicker;
+
 }
 - (IBAction)selectButton:(id)sender;
 @property (strong, nonatomic) IBOutlet UIToolbar *doneToolbar;

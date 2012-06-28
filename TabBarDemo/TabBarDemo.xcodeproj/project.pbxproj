@@ -301,6 +301,7 @@
 				4425ACC71575B5D200148659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

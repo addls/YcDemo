@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 
+#define kFirstComponent 0
+#define kSubComponent 1
+
 @interface ViewController ()
 
 @end
@@ -20,7 +23,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    pickerArray = [NSArray arrayWithObjects:@"动物",@"植物",@"石头",@"天空", nil];
+    pickerArray = [NSArray arrayWithObjects:@"动物",@"植物",@"石头", nil];
+    dicPicker = [NSDictionary dictionaryWithObjectsAndKeys:
+                 [NSArray arrayWithObjects:@"鱼",@"鸟",@"虫子",            nil], @"动物",
+                 [NSArray arrayWithObjects:@"花",@"草",@"葵花",            nil], @"植物",
+                 [NSArray arrayWithObjects:@"疯狂的石头",@"花岗岩",@"鹅卵石", nil], @"石头",nil];
+    
+    subPickerArray = [dicPicker objectForKey:@"动物"];
     textField.inputView = selectPicker;
     textField.inputAccessoryView = doneToolbar;
     textField.delegate = self;
@@ -47,18 +56,39 @@
 #pragma mark - Picker Delegate
  
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
-    return 1;
+    return 2;
 }
 -(NSInteger) pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return [pickerArray count];
+    if(component == kFirstComponent){
+        return [pickerArray count];
+    }else {
+        return [subPickerArray count];
+    }
+
 }
+
 -(NSString*) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [pickerArray objectAtIndex:row];
+    if(component == kFirstComponent){
+        return [pickerArray objectAtIndex:row];
+    }else {
+        return [subPickerArray objectAtIndex:row];
+    }
+}
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    if (component == kFirstComponent) {
+        subPickerArray = [dicPicker objectForKey:[pickerArray objectAtIndex:row]]; 
+        [pickerView selectRow:0 inComponent:kSubComponent animated:YES];
+        [pickerView reloadComponent:kSubComponent];
+    }
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField{
-    NSInteger row = [selectPicker selectedRowInComponent:0];
-    self.textField.text = [pickerArray objectAtIndex:row];
+    NSInteger firstViewRow = [selectPicker selectedRowInComponent:kFirstComponent];
+    NSInteger subViewRow = [selectPicker selectedRowInComponent:kSubComponent];
+    NSString * firstString = [pickerArray objectAtIndex:firstViewRow];
+    NSString * subString =  [[dicPicker objectForKey:[pickerArray objectAtIndex:firstViewRow]] objectAtIndex:subViewRow] ;
+    NSString *textString = [[NSString alloc ] initWithFormat:@"您选择了：%@%@%@", firstString, @" 里的 ", subString];
+    self.textField.text = textString;
 }
 
 - (IBAction)selectButton:(id)sender {
