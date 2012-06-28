@@ -27,7 +27,7 @@
 {
     map = [[MKMapView alloc] initWithFrame:[self.view bounds]];
 	map.showsUserLocation = YES;
-	map.mapType = MKMapTypeSatellite;
+	map.mapType = MKMapTypeStandard;
     [self.view addSubview:map];
 	
 	CLLocationCoordinate2D coords = CLLocationCoordinate2DMake(39.915352,116.397105);
